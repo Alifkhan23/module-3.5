@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Pseudo</title>
+    <style>
+        h1{
+            color: goldenrod;
+        }
+        h1:hover{
+            color: rgb(241, 7, 7);
+            font-size: 30px;
+            background-color: rgb(32, 199, 46);
+        }
+
+        .abc:hover{
+            color: blue;
+            background-color: darkmagenta;
+        }
+
+        input:focus{
+            font-size: 30px;
+            font-weight: 700;
+            color: green;
+
+        }
+
+        li:first-child{
+            background-color: green;
+        }
+
+        li:nth-child(2n){
+            background-color: aqua;
+        }
+
+        body{
+            counter-reset: Crush;
+        }
+        p::before{
+            counter-increment: section;
+            content: "Crush" counter(section)":";
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Class</h1>
+    <h1>Normal Class</h1>
+    <h1 class="abc">Vodro Class</h1>
+    
+    <input name="Email" type="text">
+    <br><br>
+    <input name="Password" type="text">
+
+    <ul>
+        <li>Alif</li>
+        <li>Jahid</li>
+        <li>Siam</li>
+        <li>Faysal</li>
+        <li>Rony</li>
+        <li>Roman</li>
+    </ul>
+
+    <ul>
+        <p>Alif</p>
+        <p>Siam</p>
+        <p>Prodip</p>
+        <p>Faisal</p>
+        <p>Rony</p>
+        <p>Roman</p>
+    </ul>
+</body>
+</html>
